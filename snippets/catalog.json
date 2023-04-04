@@ -9,6 +9,7 @@
             "  title: $2",
             "  description: $3",
             "  links: [",
+            "   // add links with `oclink`",
             "  ]",
             "  tags: [",
             "  ]",
@@ -31,6 +32,7 @@
             "  title: $2",
             "  description: $3",
             "  links: [",
+            "   // add links with `oclink`",
             "  ]",
             "  tags: [",
             "  ]",
@@ -41,6 +43,14 @@
             "  platform: $7",
             "  uri: $8",
             "---"
+        ]
+    },
+    "Link": {
+        "prefix": "oclink",
+        "body": [
+            "- url: ${1}",
+            "  title: ${2}",
+            "  icon: ${3|chat,dashboard,docs,email,github,team,help,website}"
         ]
     }
 }
