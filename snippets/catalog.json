@@ -16,5 +16,23 @@
             "  uri: $8",
             "---"
         ]
+    },
+    "CodeComponent": {
+        "prefix": "codec",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: CodeComponent",
+            "metadata:",
+            "  name: $1",
+            "  title: $2",
+            "  description: $3",
+            "spec:",
+            "  type: ${4|repository,codepath,library,package,lambda,utility,other|}",
+            "  lifecycle: $5",
+            "  owner: [$6]",
+            "  platform: $7",
+            "  uri: $8",
+            "---"
+        ]
     }
 }
