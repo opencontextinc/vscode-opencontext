@@ -45,11 +45,36 @@
             "---"
         ]
     },
+    "PlatformComponent": {
+        "prefix": "platformc",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: PlatformComponent",
+            "metadata:",
+            "  name: $1",
+            "  title: $2",
+            "  description: $3",
+            "  links: [",
+            "   // add links with `oclink`",
+            "  ]",
+            "  tags: [",
+            "  ]",
+            "spec:",
+            "  type: ${4}",
+            "  lifecycle: $5",
+            "  owner: [$6]",
+            "  platform: $7",
+            "  uri: $8",
+            "  sla: $9",
+            "  datacenter: $10",
+            "---"
+        ]
+    },
     "Link": {
         "prefix": "oclink",
         "body": [
-            "- url: ${1}",
-            "  title: ${2}",
+            "- url: $1",
+            "  title: $2",
             "  icon: ${3|chat,dashboard,docs,email,github,team,help,website}"
         ]
     }
