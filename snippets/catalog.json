@@ -1,0 +1,20 @@
+{
+    "AuxComponent": {
+        "prefix": "auxc",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: AuxComponent",
+            "metadata:",
+            "  name: $1",
+            "  title: $2",
+            "  description: $3",
+            "spec:",
+            "  type: ${4|document,website,tool,infocard,other|}",
+            "  lifecycle: $5",
+            "  owner: [$6]",
+            "  platform: $7",
+            "  uri: $8",
+            "---"
+        ]
+    }
+}

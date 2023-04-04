@@ -7,15 +7,15 @@
     "vscode": "^1.77.0"
   },
   "categories": [
-    "Other"
+    "Snippets"
   ],
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {
-    "commands": [
+    "snippets": [
       {
-        "command": "vscode-opencontext.helloWorld",
-        "title": "Hello World"
+        "language": "yaml",
+        "path": "./snippets/catalog.json"
       }
     ]
   },
