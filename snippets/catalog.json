@@ -128,10 +128,10 @@
             "  ]",
             "spec:",
             "  profile:",
-            "    displayName: $3",
-            "    displayEmail: $4",
-            "    role: $5",
-            "  memberOf: [$6]",
+            "    displayName: $2",
+            "    displayEmail: $3",
+            "    role: $4",
+            "  memberOf: [$5]",
             "---"
         ]
     },
@@ -149,6 +149,40 @@
             "  profile:",
             "    displayName: $4",
             "    displayEmail: $5",
+            "---"
+        ]
+    },
+    "Platform": {
+        "prefix": "ocscheme",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: Platform",
+            "metadata:",
+            "  name: $1",
+            "  description: $2",
+            "  links: [",
+            "    # add links with `oclink`",
+            "  ]",
+            "spec:",
+            "  owner: [$3]",
+            "  scheme: $4",
+            "  hasComponent: [$5]",
+            "---"
+        ]
+    },
+    "Scheme": {
+        "prefix": "ocscheme",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: Scheme",
+            "metadata:",
+            "  name: $1",
+            "  description: $2",
+            "  links: [",
+            "    # add links with `oclink`",
+            "  ]",
+            "spec:",
+            "  owner: [$3]",
             "---"
         ]
     },
