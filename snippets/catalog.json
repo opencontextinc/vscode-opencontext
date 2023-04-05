@@ -15,6 +15,7 @@
             "  ]",
             "spec:",
             "  type: ${4|document,website,tool,infocard,other|}",
+            "  // otherType: ",
             "  lifecycle: $5",
             "  owner: [$6]",
             "  platform: $7",
@@ -38,6 +39,7 @@
             "  ]",
             "spec:",
             "  type: ${4|repository,codepath,library,package,lambda,utility,other|}",
+            "  // otherType: ",
             "  lifecycle: $5",
             "  owner: [$6]",
             "  platform: $7",
@@ -70,12 +72,33 @@
             "---"
         ]
     },
+    "Datacenter": {
+        "prefix": "datacenter",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: Datacenter",
+            "metadata:",
+            "  name: $1",
+            "  title: $2",
+            "  description: $3",
+            "  links: [",
+            "   // add links with `oclink`",
+            "  ]",
+            "  tags: [",
+            "  ]",
+            "spec:",
+            "  type: ${4|cloud,on-premise,other|}",
+            "  // otherType: ",
+            "  owner: [$6]",
+            "  region: $7"
+        ]
+    },
     "Link": {
         "prefix": "oclink",
         "body": [
             "- url: $1",
             "  title: $2",
-            "  icon: ${3|chat,dashboard,docs,email,github,team,help,website}"
+            "  icon: ${3|chat,dashboard,docs,email,github,team,help,website|}"
         ]
     }
 }
