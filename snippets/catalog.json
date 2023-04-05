@@ -9,7 +9,7 @@
             "  title: $2",
             "  description: $3",
             "  links: [",
-            "   // add links with `oclink`",
+            "    # add links with `oclink`",
             "  ]",
             "  tags: [",
             "  ]",
@@ -33,7 +33,7 @@
             "  title: $2",
             "  description: $3",
             "  links: [",
-            "   // add links with `oclink`",
+            "    # add links with `oclink`",
             "  ]",
             "  tags: [",
             "  ]",
@@ -57,7 +57,7 @@
             "  title: $2",
             "  description: $3",
             "  links: [",
-            "   // add links with `oclink`",
+            "    # add links with `oclink`",
             "  ]",
             "  tags: [",
             "  ]",
@@ -73,7 +73,7 @@
         ]
     },
     "Datacenter": {
-        "prefix": "datacenter",
+        "prefix": "datac",
         "body": [
             "apiVersion: opencontext.com/v1alpha1",
             "kind: Datacenter",
@@ -82,7 +82,7 @@
             "  title: $2",
             "  description: $3",
             "  links: [",
-            "   // add links with `oclink`",
+            "    # add links with `oclink`",
             "  ]",
             "  tags: [",
             "  ]",
@@ -90,7 +90,66 @@
             "  type: ${4|cloud,on-premise,other|}",
             "  // otherType: ",
             "  owner: [$6]",
-            "  region: $7"
+            "  region: $7",
+            "---"
+        ]
+    },
+    "Team": {
+        "prefix": "octeam",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: Team",
+            "metadata:",
+            "  name: $1",
+            "  description: $2",
+            "  links: [",
+            "   # add links with `oclink`",
+            "  ]",
+            "spec:",
+            "  type: ${3:department}",
+            "  profile:",
+            "    displayName: $4",
+            "    email: $5",
+            "  parent: $6",
+            "  children: [$7]",
+            "  members: [$8]",
+            "---"
+        ]
+    },
+    "Person": {
+        "prefix": "ocperson",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: Person",
+            "metadata:",
+            "  name: $1",
+            "  links: [",
+            "   # add links with `oclink`",
+            "  ]",
+            "spec:",
+            "  profile:",
+            "    displayName: $3",
+            "    displayEmail: $4",
+            "    role: $5",
+            "  memberOf: [$6]",
+            "---"
+        ]
+    },
+    "User": {
+        "prefix": "ocuser",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: User",
+            "metadata:",
+            "  name: $1",
+            "  annotations:",
+            "   # 'github.com/user-login': $2",
+            "spec:",
+            "  primaryEmail: $3",
+            "  profile:",
+            "    displayName: $4",
+            "    displayEmail: $5",
+            "---"
         ]
     },
     "Link": {
