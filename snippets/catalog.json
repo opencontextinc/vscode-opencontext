@@ -76,6 +76,8 @@
             "  # add links with `oclink`",
             "  links: []",
             "  tags: []",
+            "  # add annotations `ocpgservice`, `ocpgintegration`",
+            "  # annotations:",
             "spec:",
             "  type: ${4}",
             "  lifecycle: $5",
@@ -140,7 +142,7 @@
             "metadata:",
             "  name: $1",
             "  # add links with `oclink`",
-            "  links: []",
+            "  # links:",
             "spec:",
             "  profile:",
             "    displayName: $2",
@@ -207,6 +209,30 @@
             "- url: $1",
             "  title: $2",
             "  icon: ${3|chat,dashboard,docs,email,github,team,help,website|}"
+        ]
+    },
+    "GithubProject": {
+        "prefix": "ocghproj",
+        "body": [
+            "    'github.com/project-slug': $1"
+        ]
+    },
+    "GithubUser": {
+        "prefix": "ocghuser",
+        "body": [
+            "    'github.com/user-login': $1"
+        ]
+    },
+    "PagerDutyServiceId": {
+        "prefix": "ocpagerservice",
+        "body": [
+            "    pagerduty.com/service-id: '$1'"
+        ]
+    },
+    "PagerDutyIntegrationKey": {
+        "prefix": "ocpagerintegration",
+        "body": [
+            "    pagerduty.com/integration-key: '$1'"
         ]
     }
 }
