@@ -18,6 +18,7 @@
             "  owner: [$6]",
             "  platform: $7",
             "  uri: $8",
+            "  dependsOn: [$9]",
             "---"
         ]
     },
@@ -40,6 +41,9 @@
             "  owner: [$6]",
             "  platform: $7",
             "  uri: $8",
+            "  datacenter: [$9]",
+            "  subcomponentOf: [$10]",
+            "  dependsOn: [$11]",
             "---"
         ]
     },
@@ -78,8 +82,11 @@
             "  owner: [$6]",
             "  platform: $7",
             "  uri: $8",
-            "  sla: $9",
-            "  datacenter: $10",
+            "  priority: $9",
+            "  sla: $10",
+            "  datacenter: [$11]",
+            "  dependsOn: [$12]",
+            "  dependencyOf: [$13]",
             "---"
         ]
     },
@@ -118,9 +125,10 @@
             "  profile:",
             "    displayName: $4",
             "    email: $5",
-            "  parent: $6",
-            "  children: [$7]",
-            "  members: [$8]",
+            "    timezone: $6",
+            "  parent: $7",
+            "  children: [$8]",
+            "  members: [$9]",
             "---"
         ]
     },
@@ -139,6 +147,7 @@
             "    displayEmail: $3",
             "    role: $4",
             "  memberOf: [$5]",
+            "  ownedBy: $6",
             "---"
         ]
     },
@@ -156,6 +165,7 @@
             "  profile:",
             "    displayName: $4",
             "    displayEmail: $5",
+            "  ownerOf: [$6]",
             "---"
         ]
     },
