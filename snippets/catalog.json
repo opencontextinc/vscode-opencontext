@@ -43,6 +43,23 @@
             "---"
         ]
     },
+    "CodeComponentSidecar": {
+        "prefix": "sidecar",
+        "body": [
+            "apiVersion: opencontext.com/v1alpha1",
+            "kind: CodeComponentSidecar",
+            "metadata:",
+            "  name: $1",
+            "spec:",
+            "  codecomponent: $2",
+            "  lifecycle: $3",
+            "  platform: $4",
+            "  datacenter: [$5]",
+            "  priority: $6",
+            "  sla: $7",
+            "---"
+        ]
+    },
     "PlatformComponent": {
         "prefix": "platformc",
         "body": [
