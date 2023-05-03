@@ -4,7 +4,7 @@
   "description": "Catalog snippets",
   "publisher": "opencontextinc",
   "license": "Apache-2.0",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/opencontextinc/vscode-opencontext"
