@@ -22,9 +22,9 @@ Snippets available:
   - GitHub: `ocghproj` for a repository and `ocghuser` to connect Person and User records via their GitHub username
 
 ## Examples
-![auxc snippet example](./examples/aux-expands-dark.gif)
+![auxc snippet example](https://github.com/opencontextinc/vscode-opencontext/raw/main/examples/aux-expands-dark.gif)
 
-![ocperson snippet example](./examples/oc-ex-light.gif)
+![ocperson snippet example](https://github.com/opencontextinc/vscode-opencontext/raw/main/examples/oc-ex-light.gif)
 
 ## Release Notes
 
