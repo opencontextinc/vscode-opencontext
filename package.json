@@ -5,6 +5,11 @@
   "publisher": "opencontextinc",
   "license": "Apache-2.0",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/opencontextinc/vscode-opencontext"
+  },
+  "homepage": "https://docs.opencontext.com",
   "engines": {
     "vscode": "^1.77.0"
   },
