@@ -9,7 +9,6 @@ Snippets available:
   - AuxComponent: `auxc`
   - CodeComponent: `codec`
   - PlatformComponent: `platformc`
-  - CodeComponentSidecar: `sidecar`
 - Datacenter: `datac`
 - Platform: `ocplatform`
 - Scheme: `ocscheme`

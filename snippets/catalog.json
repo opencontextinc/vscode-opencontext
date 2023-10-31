@@ -12,11 +12,11 @@
             "  links: []",
             "  tags: []",
             "spec:",
-            "  type: ${4|document,website,tool,infocard,other|}",
+            "  type: ${4|document,website,tool,infocard,sbom,runbook,other|}",
             "  // otherType: ",
             "  lifecycle: $5",
             "  owner: [$6]",
-            "  platform: $7",
+            "  service: $7",
             "  uri: $8",
             "  dependsOn: [$9]",
             "---"
@@ -39,28 +39,12 @@
             "  // otherType: ",
             "  lifecycle: $5",
             "  owner: [$6]",
-            "  platform: $7",
-            "  uri: $8",
+            "  service: $7",
+            "  priority: $8",
+            "  sla: $9",
             "  datacenter: [$9]",
             "  subcomponentOf: [$10]",
             "  dependsOn: [$11]",
-            "---"
-        ]
-    },
-    "CodeComponentSidecar": {
-        "prefix": "sidecar",
-        "body": [
-            "apiVersion: opencontext.com/v1alpha1",
-            "kind: CodeComponentSidecar",
-            "metadata:",
-            "  name: $1",
-            "spec:",
-            "  codecomponent: $2",
-            "  lifecycle: $3",
-            "  platform: $4",
-            "  datacenter: [$5]",
-            "  priority: $6",
-            "  sla: $7",
             "---"
         ]
     },
@@ -82,7 +66,7 @@
             "  type: ${4}",
             "  lifecycle: $5",
             "  owner: [$6]",
-            "  platform: $7",
+            "  service: $7",
             "  uri: $8",
             "  priority: $9",
             "  sla: $10",
@@ -109,6 +93,7 @@
             "  // otherType: ",
             "  owner: [$6]",
             "  region: $7",
+            "  partOf: $8",
             "---"
         ]
     },
@@ -171,11 +156,11 @@
             "---"
         ]
     },
-    "Platform": {
-        "prefix": "ocplatform",
+    "Service": {
+        "prefix": "ocservice",
         "body": [
             "apiVersion: opencontext.com/v1alpha1",
-            "kind: Platform",
+            "kind: Service",
             "metadata:",
             "  name: $1",
             "  description: $2",
@@ -183,16 +168,16 @@
             "  links: []",
             "spec:",
             "  owner: [$3]",
-            "  scheme: $4",
+            "  platform: $4",
             "  hasComponent: [$5]",
             "---"
         ]
     },
-    "Scheme": {
-        "prefix": "ocscheme",
+    "Platform": {
+        "prefix": "ocplatform",
         "body": [
             "apiVersion: opencontext.com/v1alpha1",
-            "kind: Scheme",
+            "kind: Platform",
             "metadata:",
             "  name: $1",
             "  description: $2",
