@@ -1,6 +1,6 @@
 # vscode-opencontext README
 
-The OpenContext VSCode extension will help you write catalog YAML files for PlatformComponents, Platforms, Schemes, and other entities.
+The OpenContext VSCode extension will help you write catalog YAML files for PlatformComponents, Platforms, Services, and other entities.
 
 ## Features
 
@@ -11,7 +11,7 @@ Snippets available:
   - PlatformComponent: `platformc`
 - Datacenter: `datac`
 - Platform: `ocplatform`
-- Scheme: `ocscheme`
+- Service: `ocservice`
 - Team: `octeam`
 - Person: `ocperson`
 - User: `ocuser`
